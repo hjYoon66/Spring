@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 rootProject.name = 'hello-spring'
+=======
+rootProject.name = 'Test'
+>>>>>>> 585f4eb7365a45b1adda736cb3b4bd924359a692

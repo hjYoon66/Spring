@@ -4,6 +4,7 @@
     <bytecodeTargetLevel>
       <module name="hello-spring.hello-spring.main~1" target="11" />
       <module name="hello-spring.hello-spring.test~1" target="11" />
+      <module name="hello-spring.hello-spring.test~2" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

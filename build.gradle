@@ -28,11 +28,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-<<<<<<< HEAD
-=======
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
->>>>>>> 585f4eb7365a45b1adda736cb3b4bd924359a692
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

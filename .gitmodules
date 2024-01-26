@@ -1,0 +1,6 @@
+[submodule "springboot3-developer"]
+	path = springboot3-developer
+	url = https://github.com/hjYoon66/SpringBoot3_Developer.git
+[submodule "springboot3_developer"]
+	path = springboot3_developer
+	url = https://github.com/hjYoon66/SpringBoot3_Developer.git

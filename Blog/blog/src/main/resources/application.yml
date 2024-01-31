@@ -14,7 +14,6 @@ spring:
           google:
             #client_id
 
-
             scope:
               - email
               - profile

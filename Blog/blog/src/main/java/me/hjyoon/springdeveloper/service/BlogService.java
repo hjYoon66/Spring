@@ -1,6 +1,7 @@
 package me.hjyoon.springdeveloper.service;
 
 import lombok.RequiredArgsConstructor;
+import me.hjyoon.springdeveloper.config.error.exception.ArticleNotFoundException;
 import me.hjyoon.springdeveloper.domain.Article;
 import me.hjyoon.springdeveloper.dto.AddArticleRequest;
 import me.hjyoon.springdeveloper.dto.UpdateArticleRequest;
@@ -25,7 +26,7 @@ public class BlogService {
 
     public Article findById(long id){
         return blogRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("not found : " + id));
+                .orElseThrow(ArticleNotFoundException::new);
     }
 
     public void delete(long id){

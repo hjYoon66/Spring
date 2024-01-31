@@ -6,14 +6,14 @@ spring:
         format_sql: true
 
     defer-datasource-initialization: true
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
+  
   security:
     oauth2:
       client:
         registration:
           google:
+            #client_id
+
             scope:
               - email
               - profile

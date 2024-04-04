@@ -11,17 +11,17 @@ public class MemberDao {
     private static final String user = "system";
     private static final String pwd = "0000";
     private Connection con;
-    private  PreparedStatement pstmt;
+    private PreparedStatement pstmt;
 
-    public List<MemberVo> listMembers(){
+    public List<MemberVo> listMembers() {
         List<MemberVo> list = new ArrayList<MemberVo>();
-        try{
+        try {
             connDB();
             String query = "select * from t_member";
             System.out.println("prepareStatement : " + query);
             pstmt = con.prepareStatement(query);
             ResultSet rs = pstmt.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 String id = rs.getString("id");
                 String pwd = rs.getString("pwd");
                 String name = rs.getString("name");
@@ -38,18 +38,19 @@ public class MemberDao {
             rs.close();
             pstmt.close();
             con.close();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return list;
     }
-    private void connDB(){
-        try{
+
+    private void connDB() {
+        try {
             Class.forName(driver);
             System.out.println("Oracle 드라이버 로딩 성공");
             con = DriverManager.getConnection(url, user, pwd);
             System.out.println("Connection 생성 성공");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

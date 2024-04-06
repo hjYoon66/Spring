@@ -40,6 +40,9 @@ public class MemberServlet extends HttpServlet {
             vo.setEmail(email);
 
             dao.addMember(vo);
+        } else if (command != null && command.equals("delMember")) {
+            String id = request.getParameter("id");
+            dao.delMember(id);
         }
         List list = dao.listMembers();
         out.print("<html><body>");
@@ -57,8 +60,8 @@ public class MemberServlet extends HttpServlet {
                     + pwd + "</td><td>"
                     + name + "</td><td>"
                     + email + "</td><td>"
-                    + joinDate + "</td><td>");
-
+                    + joinDate + "</td><td>"
+                     +"<a href='/member3?command=delMember&id="+id+"'>삭제 </a></td></tr>");
         }
         out.print("</table></body></html>");
         out.print("<a href='/memberForm.html'>새 회원 등록하기</a");

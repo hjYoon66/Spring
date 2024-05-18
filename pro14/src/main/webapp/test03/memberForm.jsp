@@ -4,10 +4,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>회원 가입창</title>
+    <title>회원 등록창</title>
 <body>
-<form method="post"   action="member2.jsp">
-    <h1  style="text-align:center">회원 가입창</h1>
+<form method="post"   action="member9.jsp">
+    <h1  style="text-align:center">회원 등록창</h1>
     <table  align="center">
         <tr>
             <td width="200"><p align="right">아이디</td>

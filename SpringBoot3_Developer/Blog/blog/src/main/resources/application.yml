@@ -1,0 +1,30 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+    defer-datasource-initialization: true
+  
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            #client_id
+
+            scope:
+              - email
+              - profile
+
+  h2:
+    console:
+      enabled: true
+
+
+
+
+jwt:
+  issuer: poiu601@naver.com
+  secret_key: study-springboot
